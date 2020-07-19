@@ -1,0 +1,11 @@
+name: counter_grpc
+
+environment:
+  sdk: '>=2.8.0 <3.0.0'
+
+dependencies:
+  grpc: ^2.2.0
+  async: ^2.4.2
+  protobuf: ^1.0.1
+
+  csv: ^4.0.3

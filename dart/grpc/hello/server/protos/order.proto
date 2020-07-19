@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+service Order {
+  rpc Omakase(MenuRequest) returns (MenuResponse);
+}
+
+message MenuRequest {
+  int32 budget = 1;
+}
+
+message Menu {
+  string type = 1;
+  string name = 2;
+  int32 price = 3;
+}
+
+message MenuResponse {
+  repeated Menu menus = 1;
+}

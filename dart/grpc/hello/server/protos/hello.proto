@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Hello {
+
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message CounterResponse {
+  string body = 1;
+}
