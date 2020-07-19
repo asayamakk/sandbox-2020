@@ -3,3 +3,4 @@ packages
 pubspec.lock
 .idea
 .pub-cache
+.dart_tool
