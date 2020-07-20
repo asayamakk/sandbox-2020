@@ -11,10 +11,10 @@ Future<void> main(List<String> args) async {
   print("budget: ${budget}");
 
   final channel = ClientChannel(
-    'localhost',
+    'hellogrpc-txndfs65uq-an.a.run.app',
     port: int.parse(Platform.environment["PORT"] ?? "50051"),
-    options: const ChannelOptions(credentials: ChannelCredentials.insecure()),
   );
+  print('connecting to ${channel.host}:${channel.port}');
   final stub = OrderClient(channel);
   try {
     final response = await stub.omakase(MenuRequest()..budget = budget);
